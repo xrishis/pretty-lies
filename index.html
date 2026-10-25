@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fff4f5" />
+    <meta name="description" content="Pretty Lies — a soft place for the beautifully broken. A dreamy little world of 3D hearts, honest feelings, and words we wish we had said." />
+    <meta property="og:title" content="Pretty Lies — little lies, big feelings" />
+    <meta property="og:description" content="Some words feel like forever. Even when they were never meant to stay. Wander through a little world of pretty lies and honest feelings." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://xrishis.github.io/pretty-lies/" />
+    <meta property="og:image" content="https://xrishis.github.io/pretty-lies/assets/pretty-lies.webp" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="stylesheet" href="/assets/fonts.css" />
+    <link rel="preload" as="image" href="/assets/pretty-lies.webp" />
+    <title>Pretty Lies — little lies, big feelings</title>
+  </head>
+  <body>
+    <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <symbol id="i-heart" viewBox="0 0 32 32"><path d="M16 28C13 24 3 18 3 10.6 3 3.5 11.6 2 16 9c4.4-7 13-5.5 13 1.6C29 18 19 24 16 28Z"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></symbol>
+      <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v16m-7-7 7 7 7-7"/></symbol>
+      <symbol id="i-left" viewBox="0 0 24 24"><path d="m15 5-7 7 7 7"/></symbol>
+      <symbol id="i-right" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M15 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h3"/></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    </svg>
+    <a class="skip-link" href="#quotes">Skip to the quotes</a>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Pretty Lies home"><svg><use href="#i-heart"/></svg><span>Pretty Lies</span></a>
+      <nav aria-label="Main navigation"><a href="#home">The feeling</a><a href="#quotes">Little truths</a></nav>
+      <button class="note-button" data-open-note>A note for you <svg class="icon"><use href="#i-arrow"/></svg></button>
+    </header>
+
+    <main>
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <h1 id="hero-title" class="sr-only">Pretty Lies.</h1>
+        <div class="sculpture-wrap">
+          <div class="sculpture" id="sculpture"><img src="/assets/pretty-lies.webp" width="1600" height="802" alt="Pretty Lies in glossy pink 3D letters, surrounded by lavender hearts, a little cloud, and a pink heart with a bandage" fetchpriority="high" /></div>
+          <span class="handwritten hero-scribble" aria-hidden="true">handle with feeling<svg><use href="#i-heart"/></svg></span>
+        </div>
+        <p class="hero-description">Some words feel like forever.<br />Even when they were never meant to stay.</p>
+        <a class="primary-button" href="#quotes">Wander through the words <svg class="icon"><use href="#i-arrow"/></svg></a>
+        <p class="hero-caption">A soft place for the beautifully broken.</p>
+        <a class="scroll-cue" href="#quotes">Scroll a little. Feel a little.<svg class="icon"><use href="#i-down"/></svg></a>
+      </section>
+
+      <section class="quotes-section" id="quotes" aria-labelledby="quotes-heading">
+        <div class="section-intro"><h2 id="quotes-heading">Little lies.<br /><em>Big feelings.</em></h2><p>A collection of pretty lies, honest feelings,<br class="desktop-break" /> and the words we wish we had said.</p></div>
+        <div class="filter-row" role="group" aria-label="Filter quotes by feeling">
+          <div class="feeling-filters"><button data-filter="all" aria-pressed="true">All feelings</button><button data-filter="longing" aria-pressed="false">The longing</button><button data-filter="heartbreak" aria-pressed="false">The heartbreak</button><button data-filter="healing" aria-pressed="false">The healing</button></div>
+          <button class="saved-filter" data-filter="saved" aria-pressed="false"><svg class="icon"><use href="#i-heart"/></svg>Saved<span id="saved-count"></span></button>
+        </div>
+        <div class="quote-world">
+          <div class="quote-column">
+            <article class="letter" id="quote-card" aria-label="A little truth">
+              <div class="ribbon" aria-hidden="true"><i></i><i></i><b></b></div>
+              <div class="letter-top"><span class="quote-number" id="quote-number">01 / 09</span><button class="save-button" id="save-quote" aria-label="Save this quote" aria-pressed="false"><svg class="icon"><use href="#i-heart"/></svg></button></div>
+              <div class="quote-content" aria-live="polite" aria-atomic="true"><blockquote id="quote-text"></blockquote><p class="empty-help" id="empty-help" hidden>Tap the little heart on a quote to keep it here.<br />Some words are worth holding on to.</p></div>
+              <div class="letter-bottom"><span id="quote-category">the longing.</span><button id="copy-quote"><svg class="icon"><use href="#i-copy"/></svg><span>Copy quote</span></button></div>
+            </article>
+            <div class="quote-controls"><button class="round-button" id="previous-quote" aria-label="Previous quote"><svg class="icon"><use href="#i-left"/></svg></button><span>Another little truth.</span><button class="round-button" id="next-quote" aria-label="Next quote"><svg class="icon"><use href="#i-right"/></svg></button></div>
+          </div>
+          <div class="heart-column"><span class="handwritten heart-scribble" aria-hidden="true">still soft.<br />still here.<svg><use href="#i-heart"/></svg></span><div class="heart-scene" id="heart-scene" tabindex="0" role="img" aria-label="Interactive 3D pink heart. Drag to turn it. Tap or press Enter to send a little love."></div><p class="heart-hint" id="heart-hint">Drag to turn. Tap to feel.</p></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div class="footer-rule"><svg><use href="#i-heart"/></svg></div><div class="footer-content"><a class="brand" href="#home"><svg><use href="#i-heart"/></svg><span>Pretty Lies</span></a><p>Made of feelings. Made for you.</p><a class="credit" href="https://github.com/xrishis" target="_blank" rel="noopener noreferrer">by xrishis <svg class="icon"><use href="#i-arrow"/></svg></a></div><div class="footer-small"><span>Original words, tenderly kept.</span><button id="motion-toggle" aria-pressed="false">Pause motion</button></div></footer>
+
+    <dialog id="note-dialog" aria-labelledby="note-title"><button class="dialog-close round-button" aria-label="Close the note"><svg class="icon"><use href="#i-close"/></svg></button><svg class="note-heart"><use href="#i-heart"/></svg><p class="note-salutation">dear you,</p><h2 id="note-title">You were never<br /><em>too much.</em></h2><p>Maybe their pretty lies made you question the most beautiful parts of yourself. Your softness. Your hope. The way you loved without keeping score.</p><p>But believing in someone isn’t a flaw. And a heart that has been hurt is still a heart that knows how to love.</p><p>Let the pretty lies go.<br /><strong>Keep the beautiful heart.</strong></p><p class="note-signature">with a little love,<br />Pretty Lies</p><button class="primary-button" id="keep-note">I’ll keep that with me <svg class="icon"><use href="#i-heart"/></svg></button></dialog>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <noscript><p class="noscript-note">You wrapped your pretty lies in forever, and I wore them like they were home. — Pretty Lies. Enable JavaScript to explore all nine quotes and the interactive heart.</p></noscript>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
